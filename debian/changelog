@@ -1,3 +1,9 @@
+com.github.naaando.lyrics (0.7.1) bionic; urgency=medium
+
+  * Fix settings popover menu closing on click
+
+ -- Fernando da Silva Sousa <wild.nando@gmail.com>  Fri, 08 Feb 2019 20:11:38 -0200
+
 com.github.naaando.lyrics (0.7.0) bionic; urgency=medium
 
   * Add ghost mode
