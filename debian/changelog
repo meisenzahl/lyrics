@@ -1,3 +1,9 @@
+com.github.naaando.lyrics (0.7.0) bionic; urgency=medium
+
+  * Add ghost mode
+
+ -- Fernando da Silva Sousa <wild.nando@gmail.com>  Fri, 08 Feb 2019 19:32:09 -0200
+
 com.github.naaando.lyrics (0.6.0) bionic; urgency=medium
 
   * 0.6.0
