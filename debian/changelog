@@ -1,3 +1,9 @@
+com.github.naaando.lyrics (0.7.2) bionic; urgency=medium
+
+  * Fix search returning without results in some cases
+
+ -- Fernando da Silva Sousa <wild.nando@gmail.com>  Thu, 14 Feb 2019 20:40:53 -0200
+
 com.github.naaando.lyrics (0.7.1) bionic; urgency=medium
 
   * Fix settings popover menu closing on click
