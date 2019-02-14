@@ -5,6 +5,7 @@ public class Lyrics.MainWindow : Gtk.ApplicationWindow, SaveWindowStateMixin {
     bool keep_above_when_playing;
     Gtk.CssProvider custom_font_provider;
     ClickThroughHelper ghost_mode;
+    BlurHelper blur;
 
     public MainWindow (Gtk.Application application, Players _players, Gtk.Stack stack) {
         Object (
@@ -22,6 +23,8 @@ public class Lyrics.MainWindow : Gtk.ApplicationWindow, SaveWindowStateMixin {
 
         //  Click through functionality
         ghost_mode = new ClickThroughHelper (this);
+        blur = new BlurHelper (this);
+        blur.enable ();
 
         //  Add css classes to main window
         get_style_context ().add_class ("rounded");
