@@ -22,7 +22,7 @@ public class BlurHelper : Object {
     public void enable () {
         Timeout.add (1000, () => {
             try {
-                gala.enable_blur_behind (window_id, 0, 0, 0, 0, 235);
+                gala.enable_blur_behind (window_id, 0, 0, 0, 0, 255);
             } catch (Error e) {
                 critical (e.message);
             }
