@@ -46,8 +46,10 @@ executable(
     'src/View/MainWindow.vala',
     'src/View/SearchLyricDialog.vala',
     'src/View/SettingsPopover.vala',
+    'src/View/Helper/BlurHelper.vala',
     'src/View/Helper/ClickThroughHelper.vala',
     'src/View/Helper/SaveWindowStateMixin.vala',
+    'src/View/Services/IGala.vala',
     'src/View/Widgets/Displays/IDisplay.vala',
     'src/View/Widgets/Displays/SimpleDisplay.vala',
     'src/View/Widgets/Displays/ScrolledDisplay.vala',
@@ -60,6 +62,7 @@ executable(
         dependency ('glib-2.0'),
         dependency ('gtk+-3.0'),
         dependency ('gee-0.8'),
+        dependency ('gdk-x11-3.0'),
     ],
     install: true
 )
