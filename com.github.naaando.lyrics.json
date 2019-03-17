@@ -23,6 +23,23 @@
         "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "modules": [
+        "python3-doit.json",
+        {
+            "name": "xmlbird",
+            "buildsystem": "simple",
+            "build-commands": [
+                "./configure --prefix=/app --libdir=/lib",
+                "doit",
+                "./install.py"
+            ],
+            "sources": [
+                {
+                    "type":"archive",
+                    "url":"https://birdfont.org/xmlbird-releases/libxmlbird-1.2.10.tar.xz",
+                    "sha256":"e8b0d4984fc55865bbd60b67c8facfe1b3e7d0c8da7df665084772d230bef862"
+                }
+            ]
+        },
         {
             "name": "lyrics",
             "buildsystem": "meson",
@@ -33,8 +50,8 @@
             "sources": [
                 {
                    "type":"archive",
-                   "url":"https://github.com/naaando/lyrics/archive/0.4.6.tar.gz",
-                   "sha256":"5a4a0821384e5c69005ba9564c1e33893f1ca4566e85c13827f09cb626b91007"
+                   "url":"https://github.com/naaando/lyrics/archive/0.8.tar.gz",
+                   "sha256":"7323ae63502e249afe48e6f25b6a3b6f916cfee5aa2bdd6e82d60221bdfa1aff"
                 }
             ]
         }
